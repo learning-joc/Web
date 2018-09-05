@@ -55,64 +55,75 @@
 	<!-- Tópico -->
 	<h3>Tabelas</h3>
 		<ul>
-			<li>Na criação de tabelas usam-se as tags <strong>&lt;table&gt;</strong>, <strong>&lt;tr&gt;</strong> e <strong>&lt;td&gt;</strong>, onde <em>tr</em> representa as linhas e <em>td</em> as colunas, respectivamente.</li>
+			<li>Na criação de tabelas usam-se as tags <strong>&lt;table&gt;</strong>, <strong>&lt;tr&gt;</strong> e <strong>&lt;td&gt;</strong>, onde <em >tr</em > representa as linhas e <em >td</em > as colunas, respectivamente.</li>
 			<li>A largura da tabela pode ser em pixels ou em porcentagem da tela.</li>
 			<li>A propriedade <em>colspan</em> mescla colunas e a <em>rowspan</em>, linhas.</li>
 			<br>
-		<table border="1" width="300">
-			<tr>
-				<th colspan="2">Produtos</th>
-			</tr>
-			<tr>
-				<th>Código</th>
-				<th>Preço</th>
-			</tr>
-			<tr>
-				<td>001</td>
-				<td>R$ 10</td>
-			</tr>
-			<tr>
-				<td>002</td>
-				<td>R$ 15</td>
-			</tr>
-			<tr>
-				<td rowspan="2">Desconto</td>
-				<td>Cupom 1</td>
-			</tr>
-			<tr>
-				<td>Cupom 2</td>
-			</tr>
-		</table>
-
+			<table border="1" width="300">
+				<tr>
+					<th colspan="2">Produtos</th>
+				</tr>
+				<tr>
+					<th>Código</th>
+					<th>Preço</th>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>R$ 10</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>R$ 15</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Desconto</td>
+					<td>Cupom 1</td>
+				</tr>
+				<tr>
+					<td>Cupom 2</td>
+				</tr>
+			</table>
 		</ul>
 
 	<!-- Tópico -->
 	<h3>Formulários</h3>
 	<ul>
+		<li>
+			Os campos dos formulários possuem tipos que podem ser: <em>text</em>, <em>password</em>, <em>radio</em>, <em>checkbox</em>, <em>select</em>, <em>textarea</em>, <em>button</em>, <em>submit</em>, entre outros. Abaixo, temos um exemplo de formulário.
+		</li><br>
+
 		<form>
 			Login: <input type="text" name="login">
-			<br>
+			<br><br>
 			Password: <input type="password" name="password">
-			<br>
+			<br><br>
 			Sexo:
 			<input type="radio" name="sexo">F
 			<input type="radio" name="sexo">M
-			<br>
+			<br><br>
 			Interesses: 
 			<input type="checkbox">Futebol
 			<input type="checkbox">Games 
-			<br>
+			<br><br>
 			Estado: 
 			<select>
 				<option>SP</option>
 				<option>RN</option>
 			</select>
-			<br>
+			<br><br>
 			Obs: <br> <textarea></textarea>
 			<br><br>
 			<input type="submit" value="Cadastrar">
 		</form>
 	</ul>
+
+	<!-- Tópico -->
+	<h3>Caracteres Especiais</h3>
+		<ul>
+			<li>
+				Para usar caracteres especiais é necessário utilizar <em>entidades</em> . É fácil de encontrar listas com caracteres na internet, <a href="https://www.devmedia.com.br/html-entities-html-symbols-html-characters/1011" target="_blank" >aqui</a> disponibilizo a do DevMedia.
+			</li>
+		</ul>
 
 			
 
