@@ -1,8 +1,6 @@
 # Curso de desenvolvimento Web
 
-Com o intuito de praticar os conhecimentos, estou criando uma página falando sobre o curso usando o que aprendi nele.
-
-- Abrir a página [index.html](/secao-html/index.html)
+Com o intuito de praticar os conhecimentos, estou criando uma [página](/secao-html/index.html) falando sobre o curso usando o que aprendi nele.
 
 - [Link do curso](https://www.udemy.com/curso-completo-do-desenvolvedor-web/)
 
