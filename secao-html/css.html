@@ -3,6 +3,12 @@
 <head>
 	<title>CSS</title>
 	<meta charset="utf-8">
+
+	<style type="text/css">
+		#cor { color: darkgreen; background-color: lightblue; }
+		#fonte { font-family: "Courier New", Lucida; }
+	</style>
+
 </head>
 <body>
 
@@ -26,11 +32,23 @@
 	<h3>Estilos</h3>
 	<ul>
 		<li><strong>Inline:</strong> Coloca a formatação direto na linha da tag, mas isso dificulta a manutenção do código.<br>&lt;<em>tag</em> style&equals;&quot;<em>atributos</em>&quot;&gt;</li><br>
-		<li><strong>Seletores:</strong> Coloca a tag style no head aplicando a formatação a todos os componenentes de uma vez.</li><br>
+		<li><strong>Seletores:</strong> Coloca a tag style no head aplicando a formatação a todos os componenentes de uma vez.<br>Dessa forma: <em>tag &lcub; atributos &rcub;</em></li><br>
 		<li><strong>Classes:</strong> Formatar as tags que incluirem essa classe, ela pode ser aplicada inúmeras vezes.<br>A classe é escrita assim: &period;<em>nome da classe &lcub;atributos&rcub;</em></li><br>
-		<li><strong>ID:</strong> IDs têm o mesmo objetivo das classes. A diferença é que devem ser usadas para um único elemento da página.<br>A ID é escrita assim: &num;<em>nome do ID &lcub;atributos&rcub;</em></li>
+		<li><strong>ID:</strong> IDs têm o mesmo objetivo das classes. A diferença é que devem ser usadas para um único elemento da página.<br>A ID é escrita assim: &num;<em>nome do ID &lcub;atributos&rcub;</em></li><br>
+		<li><strong>Span: </strong>São elementos inline. Matem o texto formatado na linha.</li><br>
+		<li><strong>Divs: </strong>Utilizada para dividir a página em áreas que podem ser formatadas de forma diferente.São elementos em bloco, e tem precedência em relação a <em>span</em>.</li><br>
 	</ul>
 
+	<h3>Bordas</h3>
+	<ul>
+		São três valores são passados pelo atributo <strong>border</strong>. Também é permitido que esses valores sejam passados por atributos individuais, no entanto, usar um pode ser mais simples.<br><br>Exemplo: <em style="border: 1px solid red;">border: espessura cor tipo-da-borda&semi;</em><br><br>Outras propriedades sobre as bordas podem ser vistos <a href="https://www.w3schools.com/css/css_border.asp" target="_blank" >aqui.</a>
+	</ul>
+
+	<h3>Fontes e Cores</h3>
+	<ul>
+		<li>É possível alterar a <span id="cor">cor dos elementos</span>, com os códigos das<a href="https://html-color-codes.info/Codigos-de-Cores-HTML/" target="_blank"> cores</a>.</li><br>
+		<li>Também podemos alterar a fonte dos textos.<br>Exemplo dos valores passados no atributo: <em>font-family&colon; &lcub;&quot;font-family&quot;, generic-family &semi;&rcub;</em>.<br><br>Podemos ver várias propriedades sobre fontes nesses links:<br><a href="https://www.w3schools.com/css/css_font.asp" target="_blank">Família de fontes e propriedades</a><br><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Fontes seguras</a></li>
+	</ul>
 
 
 
