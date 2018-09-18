@@ -9,7 +9,7 @@ Com o intuito de praticar os conhecimentos, estou criando uma [página](/secao-h
 O link para os projetos desenvolvidos estão dentro da página criada.
 
 - [x] Site de viagens em HTML
-- [ ] Blog com HTML e CSS
+- [x] Blog com HTML e CSS
 - [ ] Página inicial do famoso site Spotify
 - [ ] Jogo de estourar balões em JavaScript
 - [ ] Jogo da velha em JQuery

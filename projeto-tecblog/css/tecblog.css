@@ -3,9 +3,7 @@
 	padding: 0;
 }
 
-.borda {
-	border: 1px solid red;
-}
+.cor-verde { color: #B9C941; }
 
 body { 
 	/* font-size: 16px; */
@@ -16,20 +14,64 @@ body {
 #navegacao {
 	background-color: #FFF;
 	border-bottom: 1px solid #D8D8D8;
-	height: 50px;
+	height: 49px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+#logo { 
+	float: left;
+	padding: 5px 0;
+}
+
+#menu {
+	float: right;
+	padding: 14px 0;
 }
 
 #area {
 	width: 900px;
-	margin: auto;
+	margin: 0 auto;
 }
 
-#logo { float: left; }
-#logo-cor { color: #B9C941; }
+#area-principal {
+	width: 900px;
+	margin: 70px auto 20px auto;
+}
 
-#menu {
-	float: right;
-	padding: 12px 0;
+/* Formatação da postagem */
+.postagem {
+	background-color: #FFF;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.data-postagem {
+	font-size: 14px;
+	border-bottom: 1px solid #D8D8D8;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.img-postagem {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+.texto-postagem {
+	text-align: justify;
+	padding-right: 10px;
+}
+
+.postado {
+	border-left: 5px solid #D8D8D8;
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 14px;
 }
 
 /* Formatação Links */
