@@ -4,10 +4,10 @@
 
 ## Projetos do curso
 
-- [Veja os projetos](https://learning-joc.github.io/desenvolvimento-web/index)
+- [x] [Site de viagens em HTML](https://learning-joc.github.io/desenvolvimento-web/projeto-jm-viagens/jm-viagens.html)
 
-- [x] Site de viagens em HTML
-- [x] Blog com HTML e CSS
+- [x] [Blog com HTML e CSS](https://learning-joc.github.io/desenvolvimento-web/projeto-tecblog/tecblog.html)
+
 - [ ] Página inicial do famoso site Spotify
 - [ ] Jogo de estourar balões em JavaScript
 - [ ] Jogo da velha em JQuery
