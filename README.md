@@ -1,12 +1,10 @@
 # Curso de desenvolvimento Web
 
-Com o intuito de praticar os conhecimentos, estou criando uma [página](/secao-html/index.html) falando sobre o curso usando o que aprendi nele.
-
 - [Link do curso](https://www.udemy.com/curso-completo-do-desenvolvedor-web/)
 
 ## Projetos do curso
 
-O link para os projetos desenvolvidos estão dentro da página criada.
+- [Veja os projetos](https://learning-joc.github.io/desenvolvimento-web/)
 
 - [x] Site de viagens em HTML
 - [x] Blog com HTML e CSS
