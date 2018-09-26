@@ -4,7 +4,7 @@
 
 ## Projetos do curso
 
-- [Veja os projetos](https://learning-joc.github.io/desenvolvimento-web/)
+- [Veja os projetos](https://learning-joc.github.io/desenvolvimento-web/index)
 
 - [x] Site de viagens em HTML
 - [x] Blog com HTML e CSS
