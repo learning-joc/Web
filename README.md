@@ -4,7 +4,6 @@
 
 ## Projetos do curso
 
-- [x] <a href="https://learning-joc.github.io/desenvolvimento-web/projeto-jm-viagens/jm-viagens.html" target="blank">Site de viagens em HTML</a>
 - [x] [Site de viagens em HTML](https://learning-joc.github.io/desenvolvimento-web/projeto-jm-viagens/jm-viagens.html)
 - [x] [Blog com HTML e CSS](https://learning-joc.github.io/desenvolvimento-web/projeto-tecblog/tecblog.html) 
 
