@@ -9,6 +9,7 @@ body {
 				linear-gradient(50deg, #FF4169, #7C26F8);
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 /* barra de navegacao */
@@ -90,10 +91,53 @@ nav.navbar-transparente {
 	color: black;
 }
 
+/* seção serviços */
+#servicos {
+	background-color: white;
+	padding: 20px 0px;
+}
+
+.albuns {
+	padding: 10px 0px;
+}
+
+#funcionalidades {
+	padding: 20px 0px;
+	color: white;
+}
+
+.rotacionar {
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+
 /* --- TIPOGRAFIA --- */
 h1 {
 	font-size: 100px;
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#servicos h2, #servicos h3 {
+	color: #7C25F8;
+}
+
+#funcionalidades h3 {
+	color: #9BF0E1;
 }
