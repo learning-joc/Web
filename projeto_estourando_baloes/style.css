@@ -1,0 +1,27 @@
+#contadores {
+	border: 1px solid #A2A2A2;
+	height: 500px;
+	width: auto;
+	background: #FFF;
+	float: left;
+}
+
+#cronometro {
+	background: url('imagens/cronometro.png') no-repeat;
+	width: 140px;
+	height: 132px;
+	text-align: center;
+}
+
+#cenario {
+	width: 600px;
+	height: 500px;
+	background: url('imagens/cenario.png') no-repeat;
+	float: left;
+	background-position: bottom;
+}
+
+#tempo_jogo {
+	color: red;
+	font-size: 30px;
+}
