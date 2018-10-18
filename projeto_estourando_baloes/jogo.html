@@ -5,32 +5,39 @@
 
 		<title>Estourando balões</title>
 		<script src="jogo.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 	</head>
 
-	<body onload="iniciaJogo ()">
+	<body onload="iniciaJogo()">
 
-		<div id="contadores">
-			<table border="1">
+		<div id="centro">
+			
+			<div id="contadores">
+			<table>
 				<tr>
 					<td>
 						<img src="imagens/balao_azul_grande.png">
 					</td>
-					<td>10</td>
+					<td>
+						<span id="baloes_inteiros"></span>
+					</td>
 				</tr>
 			</table>
 			<br>
-			<table border="1">
+			<table>
 				<tr>
 					<td>
 						<img src="imagens/balao_azul_grande_estourado.png">
 					</td>
-					<td>10</td>
+					<td>
+						<span id="baloes_estourados"></span>
+					</td>
 				</tr>
 			</table>
 			<br>
-			<table border="1">
+			<table>
 				<tr>
 					<td id="cronometro">
 						<span id="tempo_jogo"></span>
@@ -39,8 +46,11 @@
 			</table>
 		</div>
 
-		<div id="cenario">
-			
+		<div id="cenario"></div>
+		<div>
+			<h1 id="game_over">Game Over</h1>
+		</div>
+
 		</div>
 
 	</body>

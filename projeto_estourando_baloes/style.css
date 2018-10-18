@@ -1,9 +1,23 @@
+body {
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#centro {
+	width: 800px;
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
 #contadores {
 	border: 1px solid #A2A2A2;
-	height: 500px;
+	height: 490px;
 	width: auto;
 	background: #FFF;
 	float: left;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 #cronometro {
@@ -19,9 +33,51 @@
 	background: url('imagens/cenario.png') no-repeat;
 	float: left;
 	background-position: bottom;
+	text-align: center;
 }
 
 #tempo_jogo {
 	color: red;
-	font-size: 30px;
+	font-size: 25px;
+}
+
+#baloes_inteiros, #baloes_estourados {
+	font-size: 25px;
+}
+
+#iniciar {
+	width: auto;
+	text-align: center;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#iniciar h1 {
+	font-size: 40px;
+	background: -webkit-linear-gradient(right, black, lightgrey);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+#iniciar h2 {
+	display: inline-block;
+	margin: 0 10px 20px 0;
+	color: grey;
+}
+
+#iniciar select {
+	font-size: 16px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+#game_over{
+
+	width: 780px;
+	height: 330px;
+	margin: auto;
+	text-align: center;
+	padding-top: 180px;
+	font-size: 72px;
+	position: absolute;
+	color: transparent;
 }
