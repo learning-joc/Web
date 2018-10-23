@@ -79,5 +79,6 @@ body {
 	padding-top: 180px;
 	font-size: 72px;
 	position: absolute;
-	color: transparent;
+	color: black;
+	text-shadow: white 0.1em 0.1em 0.1em;
 }
