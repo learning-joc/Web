@@ -24,7 +24,6 @@ body {
 	background: url('imagens/cronometro.png') no-repeat;
 	width: 140px;
 	height: 132px;
-	text-align: center;
 }
 
 #cenario {
@@ -71,12 +70,7 @@ body {
 }
 
 #game_over{
-
-	width: 780px;
-	height: 330px;
-	margin: auto;
-	text-align: center;
-	padding-top: 180px;
+	margin: 200px 70px;
 	font-size: 72px;
 	position: absolute;
 	color: black;

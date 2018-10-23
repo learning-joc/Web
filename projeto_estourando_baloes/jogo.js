@@ -12,7 +12,7 @@ function iniciaJogo() {
 		tSegundos = 60;
 	}
 	if (nivel == 3) {
-		tSegundos = 3;
+		tSegundos = 1;
 	}
 	
 	// Inserindo segundos no span
@@ -31,17 +31,6 @@ function iniciaJogo() {
 }
 
 
-function criaBaloes(qtdeBaloes) {
-	for (var i = 1; i <= qtdeBaloes; i++) {
-		var balao = document.createElement("img");
-		balao.src = 'imagens/balao_azul_pequeno.png';
-		balao.style.margin = '10px';
-		balao.id = 'b'+i;
-		balao.onclick = function() { estourar(this); };
-
-		document.getElementById('cenario').appendChild(balao);
-	}
-}
 
 function contagemTempo(segundos) {
 	segundos = segundos - 1;
@@ -60,6 +49,19 @@ function gameOver() {
 	document.getElementById('game_over').innerHTML = 'fim de jogo';
 }
 
+function criaBaloes(qtdeBaloes) {
+	for(var i = 1; i <= qtdeBaloes; i++){
+
+		var balao = document.createElement("img");
+		balao.src = 'imagens/balao_azul_pequeno.png';
+		balao.style.margin = '10px';
+		balao.id = 'b'+i;
+		balao.onclick = function(){ estourar(this); };
+
+		document.getElementById('cenario').appendChild(balao);
+	}
+}
+
 function estourar(e) {
 	var idBalao = e.id;
 	document.getElementById(idBalao).src = 'imagens/balao_azul_pequeno_estourado.png';
@@ -73,6 +75,5 @@ function pontuacao() {
 	baloesInteiros = parseInt(baloesInteiros);
 	baloesEstourados = parseInt(baloesEstourados);
 
-	baloesInteiros = // Parei aqui
 
-}
+} 
