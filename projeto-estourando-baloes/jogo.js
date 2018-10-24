@@ -12,14 +12,14 @@ function iniciaJogo() {
 		tSegundos = 60;
 	}
 	if (nivel == 3) {
-		tSegundos = 3;
+		tSegundos = 30;
 	}
 	
 	// Inserindo segundos no span
 	document.getElementById('tempo_jogo').innerHTML = tSegundos;
 
 	// Quantidade de balões
-	var qtdeBaloes = 5;
+	var qtdeBaloes = 80;
 	criaBaloes(qtdeBaloes);
 
 	// Imprimir quantidade de balões inteiros
@@ -46,7 +46,8 @@ function contagemTempo(segundos) {
 }
 
 function gameOver() {
-	document.getElementById('mensagem').innerHTML = 'fim de jogo';
+	pararClique();
+	document.getElementById('mensagem').innerHTML = 'você perdeu';
 }
 
 function criaBaloes(qtdeBaloes) {
@@ -64,6 +65,7 @@ function criaBaloes(qtdeBaloes) {
 
 function estourar(e) {
 	var idBalao = e.id;
+	document.getElementById(idBalao).setAttribute("onclick", "");
 	document.getElementById(idBalao).src = 'imagens/balao_azul_pequeno_estourado.png';
 	pontuacao(-1);
 }
@@ -88,11 +90,19 @@ function pontuacao(acao) {
 function situacaoJogo(baloesInteiros) {
 	tempo  = document.getElementById('tempo_jogo').value;
 	if(baloesInteiros == 0) {
-		document.getElementById('mensagem').innerHTML = 'Você ganhou!';
+		document.getElementById('mensagem').innerHTML = 'você ganhou';
 		pararJogo();
 	}
 }
 
 function pararJogo() {
 	clearTimeout(timerId);
+}
+
+function pararClique() {
+	var i = 1;
+	while(document.getElementById('b' + i)) {
+		document.getElementById('b' + i).onclick = '';
+		i++;
+	}
 }
