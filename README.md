@@ -9,7 +9,7 @@
 - [x] [Blog com HTML e CSS](https://learning-joc.github.io/desenvolvimento-web/projeto-tecblog/tecblog.html) 
 - [x] [Página inicial do famoso site Spotify](https://learning-joc.github.io/desenvolvimento-web/projeto-spotify/spotify.html)
 - [x] [Jogo de estourar balões em JavaScript](https://learning-joc.github.io/desenvolvimento-web/projeto-estourando-baloes/index.html)
-- [ ] Jogo da velha em JQuery(https://learning-joc.github.io/desenvolvimento-web/projeto-jogo-velha/index.html)
+- [ ] [Jogo da velha em JQuery](https://learning-joc.github.io/desenvolvimento-web/projeto-jogo-velha/index.html)
 - [ ] Twitter em nosso projeto Twitter Clone
 
 ### Extra
