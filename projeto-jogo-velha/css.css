@@ -1,7 +1,54 @@
-table {
-	width: 600px;
+/* Tela Inicial */
+
+#telaInicial table { width: 600px; }
+#telaInicial table td { text-align: center; }
+#telaInicial table th { font-size: 36px; }
+
+#telaInicial td input {
+	text-align: center;
+	border: 0px;
+	font-size: 16px;
+	margin-top: 5px;
 }
 
-table td {
+/* Palco do Jogo */
+
+#palcoJogo {
+	margin-top: 50px;
 	text-align: center;
 }
+
+.divPalcoJogo { 
+	display: inline-block;
+}
+
+.divPalcoJogo table { margin: 0 40px; }
+.divPalcoJogo table td { 
+	width: 100px;
+	height: 100px;
+	padding: 0;
+}
+
+/* Tabela */
+
+#td11 {
+	border-bottom: 2px solid blue;
+	border-right: 2px solid red;
+}
+#td12 {	border-bottom: 2px solid blue; }
+
+#td13 {
+	border-bottom: 2px solid blue;
+	border-left: 2px solid red;
+}
+#td21 {
+	border-bottom: 2px solid blue;
+	border-right: 2px solid red;
+}
+#td22 { border-bottom: 2px solid blue; }
+#td23 {
+	border-bottom: 2px solid blue;
+	border-left: 2px solid red;
+}
+#td31 {	border-right: 2px solid red; }
+#td33 {	border-left: 2px solid red; }
