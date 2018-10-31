@@ -4,6 +4,12 @@ $(document).ready( function() {
 	
 	$('#iniciar').click( function() {
 
+		if($('#jogador1').val() == "") {
+			$('#jogador1').css("border", "2px solid red");
+			$('#jogador1').css("borderRadius", "5px");
+			return false;
+		}
+
 		var jogador1 = document.getElementById('jogador1').value;
 		var jogador2 = document.getElementById('jogador2').value;
 
