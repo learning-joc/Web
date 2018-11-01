@@ -1,6 +1,22 @@
 var rodada = 1;
 var matrizJogo = new Array(3);
 
+matrizJogo['a'] = Array(3);
+matrizJogo['b'] = Array(3);
+matrizJogo['c'] = Array(3);
+
+matrizJogo['a'][1] = 0;
+matrizJogo['a'][2] = 0;
+matrizJogo['a'][3] = 0;
+
+matrizJogo['b'][1] = 0;
+matrizJogo['b'][2] = 0;
+matrizJogo['b'][3] = 0;
+
+matrizJogo['c'][1] = 0;
+matrizJogo['c'][2] = 0;
+matrizJogo['c'][3] = 0;
+
 $(document).ready( function() {
 	
 	$('#iniciar').click( function() {
@@ -20,6 +36,11 @@ $(document).ready( function() {
 			
 	});
 
+//	$('#msg').html($('#jogador1').val());
+	$('#iniciar').load(function() {
+		$('#msg').html("Vez de " + $('#jogador1').val());
+	});
+
 	$('.jogada').click( function() {
 		var campoId = this.id;
 		realizaJogada(campoId);
@@ -32,15 +53,21 @@ function realizaJogada(id) {
 	var icone = '';
 	var ponto = 0;
 	if((rodada % 2) == 1) {
-		$('#msg').html($('#jogador1').val());
+		$('#msg').html("Vez de " + $('#jogador2').val());
 		ponto = -1;
-		icone = 'imagens/marcacao_1.png';
+		icone = 'url("imagens/marcacao_1.png")';
 	} else {
-		$('#msg').html($('#jogador2').val());
+		$('#msg').html("Vez de " + $('#jogador1').val());
 		ponto = 1;
-		icone = 'imagens/marcacao_2.png';
+		icone = 'url("imagens/marcacao_2.png")';
 	}
 	rodada++;
+	$('#' + id).css("background-image", icone);
+
+	var linhaColuna = id.split('');
+	matrizJogo[linhaColuna[0]][linhaColuna[1]] = ponto;
+
+	// Parei aqui
 }
 
 
