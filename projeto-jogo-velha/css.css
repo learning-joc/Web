@@ -31,10 +31,13 @@
 	padding: 0;
 }
 
-#nomeJogador1, #nomeJogador2 {
-	margin: 0;
-}
+#nomeJogador1, #nomeJogador2 { margin: 0; }
 /* Tabela */
+
+#msg {
+	padding-bottom: 15px;
+	font-size: 24px;
+}
 
 #td11 {
 	border-bottom: 2px solid blue;
