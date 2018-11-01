@@ -1,26 +1,40 @@
 $(document).ready( function() {
-
-	$('#palcoJogo').hide();
 	
-	$('#iniciar').click( function() {
+	$('#iniciar').click( function () {
 
-		if($('#jogador1').val() == "") {
-			$('#jogador1').css("border", "2px solid red");
-			$('#jogador1').css("borderRadius", "5px");
-			return false;
-		}
+			// Validar entradas
+			if(!validarEntradasNomes()) {
+				return false;
+			}
 
-		var jogador1 = document.getElementById('jogador1').value;
-		var jogador2 = document.getElementById('jogador2').value;
+			// Exibir nomes
+			$('#nomeJogador1').html($('#jogador1').val());
+			$('#nomeJogador2').html($('#jogador2').val());
 
-		if(jogador2 == "" || jogador2 == "") {
-			document.getElementById('msgErro').innerHTML = "Insira os nomes dos jogadores!";
+			$('#palcoJogo').show();
+			$('#telaInicial').hide();
 
-			return false;			
-		}
 
-		$('#telaInicial').hide();
-		$('#palcoJogo').show();
-	} )
+	})
 
 } )
+
+
+function validarEntradasNomes() {
+	if($('#jogador1').val() == "" && $('#jogador2').val() == "") {
+		$('#jogador1').css("border", "1px solid red");
+		$('#jogador2').css("border", "1px solid red");
+		return false;
+	}
+	if($('#jogador1').val() == "") {
+		$('#jogador1').css("border", "1px solid red");
+		$('#jogador2').css("border", "transparent");
+		return false;
+	}
+	if($('#jogador2').val() == "") {
+		$('#jogador1').css("border", "transparent");
+		$('#jogador2').css("border", "1px solid red");
+		return false;
+	}
+	return true;
+}
