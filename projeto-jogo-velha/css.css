@@ -9,6 +9,7 @@
 	border: 0px;
 	font-size: 16px;
 	margin-top: 5px;
+	border-radius: 5px;
 }
 
 /* Palco do Jogo */
@@ -16,6 +17,7 @@
 #palcoJogo {
 	margin-top: 50px;
 	text-align: center;
+	display: none;
 }
 
 .divPalcoJogo { 
@@ -29,7 +31,13 @@
 	padding: 0;
 }
 
+#nomeJogador1, #nomeJogador2 { margin: 0; }
 /* Tabela */
+
+#msg {
+	padding-bottom: 15px;
+	font-size: 24px;
+}
 
 #td11 {
 	border-bottom: 2px solid blue;
