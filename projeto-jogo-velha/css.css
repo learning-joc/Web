@@ -36,27 +36,29 @@
 
 #msg {
 	padding-bottom: 15px;
-	font-size: 24px;
+	font-size: 20px;
 }
 
-#td11 {
+#ganhador1, #ganhador2 { color: green; }
+
+#a1 {
 	border-bottom: 2px solid blue;
 	border-right: 2px solid red;
 }
-#td12 {	border-bottom: 2px solid blue; }
+#a2 {	border-bottom: 2px solid blue; }
 
-#td13 {
+#a3 {
 	border-bottom: 2px solid blue;
 	border-left: 2px solid red;
 }
-#td21 {
+#b1 {
 	border-bottom: 2px solid blue;
 	border-right: 2px solid red;
 }
-#td22 { border-bottom: 2px solid blue; }
-#td23 {
+#b2 { border-bottom: 2px solid blue; }
+#b3 {
 	border-bottom: 2px solid blue;
 	border-left: 2px solid red;
 }
-#td31 {	border-right: 2px solid red; }
-#td33 {	border-left: 2px solid red; }
+#c1 {	border-right: 2px solid red; }
+#c3 {	border-left: 2px solid red; }
